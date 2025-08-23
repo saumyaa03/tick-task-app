@@ -47,3 +47,27 @@
     transform: scale(0.8);
     box-shadow: 0 0 5px rgb(33, 44, 57); /* decrease the shadow from 10 to 5*/
 }
+
+/* Style the todo-list */
+.todos-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.todos-single {
+    display: flex;
+    width: 29.5%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    /* background-image: url("../../public/images/todo.jpg"); */
+}
+
+.todos-single-text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
