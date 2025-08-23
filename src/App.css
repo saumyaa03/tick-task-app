@@ -10,6 +10,10 @@
   font-family: "Neucha", cursive;
 }
 
+.App.dark {
+  background-color: rgb(33, 44, 57); /* darker shade */
+}
+
 .heading {
   text-transform: uppercase;
   font-size: 40px;
