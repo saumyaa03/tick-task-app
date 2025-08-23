@@ -1,0 +1,7 @@
+# Properties that I want in my todo list
+(create an interface for this)
+ - id
+ - isDone
+ - todo
+
+
