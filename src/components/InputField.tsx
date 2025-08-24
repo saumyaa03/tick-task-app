@@ -1,6 +1,7 @@
 import React, {useRef } from "react";
 import "../styles/styles.css";
 
+
 interface Props {
   todo: string;
   setTodo: React.Dispatch<React.SetStateAction<string>>;
@@ -9,6 +10,7 @@ interface Props {
 
 const InputField = ({ todo, setTodo, handleAdd }: Props) => {
   // const InputField: React.FC<Props> = ({todo, setTodo}) => { // you can use either
+
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -26,11 +28,9 @@ const InputField = ({ todo, setTodo, handleAdd }: Props) => {
         placeholder="Enter a task"
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
-        className="input-box"
+        className='input-box'
       />
-      <button type="submit" className="input-submit">
-        Go
-      </button>
+      <button type='submit' className='input-submit'>Go</button>
     </form>
   );
 };
