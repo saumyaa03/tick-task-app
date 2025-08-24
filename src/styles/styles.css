@@ -1,49 +1,97 @@
 .input-form {
-    display: flex;
-    width: 90%;
-    position: relative;
-    align-items: center;
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
 }
 
 .input-box {
-    width: 100%;
-    border-radius: 50px;
-    padding: 20px 30px;
-    font-size: 25px;
-    border: none;
-    transition: 0.2s;
-    box-shadow: inset 0 0 5px black;
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
 }
 
 .input-box:focus {
-    box-shadow: 0 0 10px 1000px  rgb(33, 44, 57); /* fixed syntax */
-    border: 2px solid rgb(167, 198, 234);
-    
-    outline: none;
-  }
+  box-shadow: 0 0 10px 1000px rgb(33, 44, 57, 0.5); /* fixed syntax */
+  border: 2px solid rgb(167, 198, 234);
+
+  outline: none;
+}
 
 /* Go button */
 .input-submit {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    margin: 12px;
-    border-radius: 50px;
-    right: 0px;
-    border: none;
-    font-size: 15px;
-    background-color: rgb(160, 195, 234);
-    color: white;
-    transition: 0.2s all;
-    box-shadow: 0 0 10px rgb(33, 44, 57);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  right: 0px;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(160, 195, 234);
+  color: white;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px rgb(33, 44, 57);
 }
 
 /* Animation */
 .input-submit:hover {
-    background-color: rgb(110, 164, 227);
+  background-color: rgb(110, 164, 227);
 }
 
 .input-submit:active {
-    transform: scale(0.8);
-    box-shadow: 0 0 5px rgb(33, 44, 57); /* decrease the shadow from 10 to 5*/
+  transform: scale(0.8);
+  box-shadow: 0 0 5px rgb(33, 44, 57); /* decrease the shadow from 10 to 5*/
+}
+
+/* Style the todo-list */
+.todos-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.todos-single {
+  display: flex;
+  width: 29.5%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-image: url("../../public/images/todo.jpg");
+}
+
+.todos-single-text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .todos-single {
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
+  .todos-list {
+    width: 95%;
+  }
+  .todos-single {
+    width: 100%;
+  }
 }
